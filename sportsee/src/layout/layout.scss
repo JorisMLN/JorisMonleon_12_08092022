@@ -1,0 +1,23 @@
+.frame{
+  height: 100vh;
+  overflow: hidden;
+
+  .horizontalNav{
+    background-color: #020203;
+    height: 91px;
+  }
+
+  &__main{
+    height: 91vh;
+    display: flex;
+
+    .verticalNav{
+      background-color: #020203;
+      width: 117px;
+    }
+
+    .mainContainer{
+      width: 100%;
+    }
+  }
+}
