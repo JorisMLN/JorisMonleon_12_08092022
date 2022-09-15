@@ -14,15 +14,25 @@
     justify-content: space-between;
     align-items: center;
 
+    
+    .logo{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 200px;
+      color: $primary;
+      font-size: 24px;
+    }
+
     &__btn{
       display: flex;
       justify-content: space-around;
       align-items: center;
+      font-size: 24px;
   
       margin: 8px;
       color: white;
-      width: 12%;
-      border: 1px solid red;
+      width: 20%;
     }
   }
 

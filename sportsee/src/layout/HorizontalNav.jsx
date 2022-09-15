@@ -5,6 +5,7 @@ const HorizontalNav = () => {
 
   return (
     <div className="horizontalNav">
+      <div className="logo"> SportSee </div>
       {horizontalData.map(item => <div className='horizontalNav__btn'>{item}</div>)}
     </div>
   )

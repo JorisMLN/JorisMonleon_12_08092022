@@ -1,5 +1,4 @@
 export const horizontalData = [
-  'SportSee',
   'Accueil',
   'Profil',
   'Réglage',
