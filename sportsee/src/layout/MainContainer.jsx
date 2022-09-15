@@ -3,7 +3,7 @@ import { user } from '../mock/dataMocked';
 
 import DailyActivity from '../component/daylyActivity/DailyActivity';
 import AverageSessions from '../component/averageSessions/AverageSessions';
-import RadarChart from '../component/radarChart/RadarChart';
+import RadarChartFrame from '../component/radarChart/RadarChartFrame';
 import DailyScore from '../component/dailyScore/DailyScore';
 import KeyNumbers from '../component/keyNumbers/KeyNumbers';
 
@@ -22,7 +22,7 @@ const MainContainer = () => {
         <div className='left'>
           <DailyActivity />
           <AverageSessions />
-          <RadarChart />
+          <RadarChartFrame />
           <DailyScore />
         </div>
         <div className='right'>
