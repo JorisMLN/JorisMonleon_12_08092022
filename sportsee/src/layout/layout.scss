@@ -1,3 +1,7 @@
+@import '../styles/variables.scss';
+
+
+// -------- main frame ------- //
 .frame{
   height: 100vh;
   overflow: hidden;
@@ -55,11 +59,28 @@
       padding-left: 109px;
 
       .head{
-        border: 1px solid red;
         height: 200px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+
+        title{
+          margin-top: 70px;
+          width: 30%;
+          height: 20%;
+          display: flex;
+          align-items: center;
+
+          .hello{
+            font-size: 48px;
+            margin-right: 30px;
+          }
+
+          .name{
+            font-size: 48px;
+            color: $primary;
+          }
+        }
       }
 
       section{
