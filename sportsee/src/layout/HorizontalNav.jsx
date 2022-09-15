@@ -1,10 +1,11 @@
 import './layout.scss';
+import { horizontalData } from '../mock/dataMocked';
 
 const HorizontalNav = () => {
 
   return (
     <div className="horizontalNav">
-      test
+      {horizontalData.map(item => <div className='horizontalNav__btn'>{item}</div>)}
     </div>
   )
 }

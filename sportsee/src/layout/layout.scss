@@ -5,6 +5,21 @@
   .horizontalNav{
     background-color: #020203;
     height: 91px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__btn{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  
+      margin: 8px;
+      color: white;
+      width: 12%;
+      border: 1px solid red;
+    }
   }
 
   &__main{
@@ -12,8 +27,27 @@
     display: flex;
 
     .verticalNav{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
       background-color: #020203;
       width: 117px;
+
+      nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 40%;
+
+        .navBtn{
+          background-color: white;
+          border-radius: 6px;
+          width: 64px;
+          height: 64px;
+        }
+      }
     }
 
     .mainContainer{
