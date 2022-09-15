@@ -4,7 +4,27 @@ const KeyNumbers = () => {
 
   return (
     <div className="keyNumbers">
-      KeyNumbers
+
+      <div className='keys'>
+        <div className='keys__logo'></div>
+        <div className='keys__data'></div>
+      </div>
+      
+      <div className='keys'>
+        <div className='keys__logo'></div>
+        <div className='keys__data'></div>
+      </div>
+      
+      <div className='keys'>
+        <div className='keys__logo'></div>
+        <div className='keys__data'></div>
+      </div>
+      
+      <div className='keys'>
+        <div className='keys__logo'></div>
+        <div className='keys__data'></div>
+      </div>
+      
     </div>
   )
 }
