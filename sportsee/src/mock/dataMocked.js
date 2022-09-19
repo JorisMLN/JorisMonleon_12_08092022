@@ -175,3 +175,22 @@ export const dailyData = [
     "pv": 4300
   }
 ]
+
+export const keyNumbers = [
+  {
+    name: 'bla',
+    value: 34
+  },
+  {
+    name: 'ble',
+    value: 12
+  },
+  {
+    name: 'bli',
+    value: 24
+  },
+  {
+    name: 'blo',
+    value: 54
+  },
+]

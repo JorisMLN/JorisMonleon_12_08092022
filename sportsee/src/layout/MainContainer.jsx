@@ -5,7 +5,7 @@ import DailyActivity from '../component/daylyActivity/DailyActivity';
 import AverageSessions from '../component/averageSessions/AverageSessions';
 import RadarChartFrame from '../component/radarChart/RadarChartFrame';
 import DailyScore from '../component/dailyScore/DailyScore';
-import KeyNumbers from '../component/keyNumbers/KeyNumbers';
+import KeyBloc from '../component/keyNumbers/KeyBloc';
 
 const MainContainer = () => {
 
@@ -26,7 +26,7 @@ const MainContainer = () => {
           <DailyScore />
         </div>
         <div className='right'>
-          <KeyNumbers />
+          <KeyBloc />
         </div>
       </section>
     </div>
