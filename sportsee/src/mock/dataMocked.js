@@ -50,43 +50,43 @@ export const radarData = [
 
 export const lineData = [
   {
-    "name": "Page A",
+    "name": "L",
     "uv": 4000,
     "pv": 2400,
     "amt": 2400
   },
   {
-    "name": "Page B",
+    "name": "M",
     "uv": 3000,
     "pv": 1398,
     "amt": 2210
   },
   {
-    "name": "Page C",
+    "name": "M",
     "uv": 2000,
     "pv": 9800,
     "amt": 2290
   },
   {
-    "name": "Page D",
+    "name": "J",
     "uv": 2780,
     "pv": 3908,
     "amt": 2000
   },
   {
-    "name": "Page E",
+    "name": "V",
     "uv": 1890,
     "pv": 4800,
     "amt": 2181
   },
   {
-    "name": "Page F",
+    "name": "S",
     "uv": 2390,
     "pv": 3800,
     "amt": 2500
   },
   {
-    "name": "Page G",
+    "name": "D",
     "uv": 3490,
     "pv": 4300,
     "amt": 2100
@@ -96,19 +96,19 @@ export const lineData = [
 export const scoreData = [
   {
     "name": "18-24",
-    "uv": 31.47,
-    "pv": 2400,
+    "uv": 0,
+    "pv": 1000,
     "fill": "#8884d8"
   },
   {
     "name": "25-29",
-    "uv": 26.69,
+    "uv": 0,
     "pv": 4567,
     "fill": "#83a6ed"
   },
   {
     "name": "30-34",
-    "uv": -15.69,
+    "uv": 0,
     "pv": 1398,
     "fill": "#8dd1e1"
   },
@@ -120,7 +120,7 @@ export const scoreData = [
   },
   {
     "name": "40-49",
-    "uv": -8.63,
+    "uv": 8.63,
     "pv": 3908,
     "fill": "#a4de6c"
   },
@@ -132,45 +132,59 @@ export const scoreData = [
   },
   {
     "name": "unknow",
-    "uv": 6.67,
-    "pv": 4800,
+    "uv": 10,
     "fill": "#ffc658"
   }
 ]
 
 export const dailyData = [
   {
-    "name": "Page A",
+    "name": "1",
     "uv": 4000,
     "pv": 2400
   },
   {
-    "name": "Page B",
+    "name": "2",
     "uv": 3000,
     "pv": 1398
   },
   {
-    "name": "Page C",
+    "name": "3",
     "uv": 2000,
     "pv": 9800
   },
   {
-    "name": "Page D",
+    "name": "4",
     "uv": 2780,
     "pv": 3908
   },
   {
-    "name": "Page E",
+    "name": "5",
     "uv": 1890,
     "pv": 4800
   },
   {
-    "name": "Page F",
+    "name": "6",
     "uv": 2390,
     "pv": 3800
   },
   {
-    "name": "Page G",
+    "name": "7",
+    "uv": 3490,
+    "pv": 4300
+  },
+  {
+    "name": "8",
+    "uv": 1890,
+    "pv": 4800
+  },
+  {
+    "name": "9",
+    "uv": 2390,
+    "pv": 3800
+  },
+  {
+    "name": "10",
     "uv": 3490,
     "pv": 4300
   }
