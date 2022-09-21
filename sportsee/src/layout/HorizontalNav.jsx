@@ -1,6 +1,5 @@
 import './layout.scss';
 import logo from '../assets/logoVector.png';
-// import logoCircle from '../assets/circleLogoVector.png';
 import { horizontalData } from '../mock/dataMocked';
 
 const HorizontalNav = () => {

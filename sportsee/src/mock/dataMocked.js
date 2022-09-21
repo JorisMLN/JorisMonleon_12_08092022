@@ -98,7 +98,7 @@ export const scoreData = [
     "name": "player",
     "uv": 1,
     "pv": 67,
-    "fill": "#8884d8"
+    "fill": "#FF0000"
   },
   // {
   //   "name": "25-29",

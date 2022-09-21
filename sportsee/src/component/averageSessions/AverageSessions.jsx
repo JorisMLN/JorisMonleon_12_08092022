@@ -12,11 +12,11 @@ const AverageSessions = () => {
       <ResponsiveContainer width="100%">
         <LineChart width="100%" height={250} data={data}>
           {/* <CartesianGrid color="#FF0000" strokeDasharray="3 3" /> */}
-          <XAxis axisLine={false} tickLine={false} dataKey="name" />
+          <XAxis axisLine={false} tickLine={false} dataKey="name" stroke="#FFFFFF"/>
           {/* <YAxis /> */}
           <Tooltip />
           {/* <Legend /> */}
-          <Line type="monotone" dataKey="pv" stroke="#8884d8" />
+          <Line type="natural" dot={false} dataKey="pv" stroke="#FFFFFF" />
           {/* <Line type="monotone" dataKey="uv" stroke="#82ca9d" /> */}
         </LineChart>
       </ResponsiveContainer>

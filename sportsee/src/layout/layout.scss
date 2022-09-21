@@ -5,6 +5,7 @@
 .frame{
   height: 100vh;
   overflow: hidden;
+  
 
   .horizontalNav{
     background-color: #020203;
@@ -64,6 +65,7 @@
   &__main{
     height: 91vh;
     display: flex;
+    
 
     .verticalNav{
       display: flex;
@@ -95,14 +97,20 @@
     .mainContainer{
       width: 100%;
       padding-left: 50px;
-      // border: 1px solid red;
+      // border: 1PX SOLID BLUE;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
       .head{
         height: 200px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        margin-left: 60px;
+        margin-left: 100px;
+
+        // border: 1PX SOLID BLUE;
+        width: 80%;
 
         title{
           margin-top: 70px;
@@ -125,6 +133,8 @@
 
       section{
         display: flex;
+        // border: 1PX SOLID BLUE;
+        width: 80%;
 
         .left{
           min-width: 835px;
