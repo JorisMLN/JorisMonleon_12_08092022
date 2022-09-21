@@ -1,5 +1,18 @@
 .dailyScore{
-  border: 1px solid grey;
-  width: 30%;
+  width: 258px;
   height: 263px;
+  margin-right: 10px;
+  background-color: #FBFBFB;
+  border-radius: 5px;
+
+  &__container{
+    &--radar{
+      border: 1px solid blue;
+
+      .line{
+        border: 1px solid purple;
+        width: 100%;
+      }
+    }
+  }
 }

@@ -64,7 +64,7 @@ export const lineData = [
   {
     "name": "M",
     "uv": 2000,
-    "pv": 9800,
+    "pv": 2800,
     "amt": 2290
   },
   {
@@ -95,46 +95,46 @@ export const lineData = [
 
 export const scoreData = [
   {
-    "name": "18-24",
-    "uv": 0,
-    "pv": 1000,
+    "name": "player",
+    "uv": 1,
+    "pv": 67,
     "fill": "#8884d8"
   },
-  {
-    "name": "25-29",
-    "uv": 0,
-    "pv": 4567,
-    "fill": "#83a6ed"
-  },
-  {
-    "name": "30-34",
-    "uv": 0,
-    "pv": 1398,
-    "fill": "#8dd1e1"
-  },
-  {
-    "name": "35-39",
-    "uv": 8.22,
-    "pv": 9800,
-    "fill": "#82ca9d"
-  },
-  {
-    "name": "40-49",
-    "uv": 8.63,
-    "pv": 3908,
-    "fill": "#a4de6c"
-  },
-  {
-    "name": "50+",
-    "uv": -2.63,
-    "pv": 4800,
-    "fill": "#d0ed57"
-  },
-  {
-    "name": "unknow",
-    "uv": 10,
-    "fill": "#ffc658"
-  }
+  // {
+  //   "name": "25-29",
+  //   "uv": 0,
+  //   "pv": 4567,
+  //   "fill": "#83a6ed"
+  // },
+  // {
+  //   "name": "30-34",
+  //   "uv": 0,
+  //   "pv": 1398,
+  //   "fill": "#8dd1e1"
+  // },
+  // {
+  //   "name": "35-39",
+  //   "uv": 8.22,
+  //   "pv": 9800,
+  //   "fill": "#82ca9d"
+  // },
+  // {
+  //   "name": "40-49",
+  //   "uv": 8.63,
+  //   "pv": 3908,
+  //   "fill": "#a4de6c"
+  // },
+  // {
+  //   "name": "50+",
+  //   "uv": -2.63,
+  //   "pv": 4800,
+  //   "fill": "#d0ed57"
+  // },
+  // {
+  //   "name": "unknow",
+  //   "uv": 10,
+  //   "fill": "#ffc658"
+  // }
 ]
 
 export const dailyData = [

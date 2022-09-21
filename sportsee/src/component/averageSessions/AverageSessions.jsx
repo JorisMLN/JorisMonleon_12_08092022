@@ -9,10 +9,10 @@ const AverageSessions = () => {
 
   return (
     <div className="averageSessions">
-      <ResponsiveContainer >
-        <LineChart width={730} height={250} data={data} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
+      <ResponsiveContainer width="100%">
+        <LineChart width="100%" height={250} data={data}>
+          {/* <CartesianGrid color="#FF0000" strokeDasharray="3 3" /> */}
+          <XAxis axisLine={false} tickLine={false} dataKey="name" />
           {/* <YAxis /> */}
           <Tooltip />
           {/* <Legend /> */}

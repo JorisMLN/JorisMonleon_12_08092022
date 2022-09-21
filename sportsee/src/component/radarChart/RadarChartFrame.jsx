@@ -9,10 +9,10 @@ const RadarChartFrame = () => {
 
   return (
     <div className="radarChart">
-      <ResponsiveContainer >
-        <RadarChart outerRadius={90} width={730} height={250} data={data}>
+      <ResponsiveContainer className="radarChart__container">
+        <RadarChart className="radarChart__container--radar" outerRadius={90} width={730} height={250} data={data} margin={{right: 10, left: 30}}>
           <PolarGrid />
-          <PolarAngleAxis dataKey="subject" />
+          <PolarAngleAxis className="name" tickLine={false} dataKey="subject" />
           <Radar name="Mike" dataKey="A" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
         </RadarChart>
       </ResponsiveContainer>
