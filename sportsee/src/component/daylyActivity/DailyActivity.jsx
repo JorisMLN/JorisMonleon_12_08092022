@@ -11,11 +11,11 @@ const DailyActivity = () => {
     <div className="dailyActivity">
       <ResponsiveContainer >
         <BarChart width={730} height={250} data={data}>
-          <CartesianGrid strokeDasharray="3 0" />
+          <CartesianGrid strokeDasharray="0 2 0" vertical={false}/>
           <XAxis dataKey="name" />
-          <YAxis />
+          <YAxis orientation="right" axisLine={false} tickLine={false}/>
           <Tooltip />
-          {/* <Legend /> */}
+          <Legend verticalAlign="top" iconType='circle'/>
           <Bar dataKey="pv" fill="#282D30" barSize={5} />
           <Bar dataKey="uv" fill="#E60000" barSize={5} />
         </BarChart>

@@ -15,9 +15,9 @@ const AverageSessions = () => {
           <XAxis axisLine={false} tickLine={false} dataKey="name" stroke="#FFFFFF"/>
           {/* <YAxis /> */}
           <Tooltip />
-          {/* <Legend /> */}
+          <Legend verticalAlign="top"/>
           <Line type="natural" dot={false} dataKey="pv" stroke="#FFFFFF" />
-          {/* <Line type="monotone" dataKey="uv" stroke="#82ca9d" /> */}
+
         </LineChart>
       </ResponsiveContainer>
     </div>

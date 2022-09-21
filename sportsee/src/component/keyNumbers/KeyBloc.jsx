@@ -6,7 +6,7 @@ const KeyBloc = () => {
 
   return (
     <div className="keyBloc">
-      {keyNumbers.map((key, index) => <Key className="key" keyProp={key} key={index} />)}
+      {keyNumbers.map((key, index) => <Key className="key" index={index} keyProp={key} key={index} />)}
     </div>
   )
 }
