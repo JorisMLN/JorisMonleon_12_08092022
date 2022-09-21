@@ -1,10 +1,8 @@
 import './activity.scss';
-
 import { ResponsiveContainer, BarChart, CartesianGrid, XAxis, YAxis, Bar, Tooltip, Legend } from 'recharts';
 import { dailyData } from '../../mock/dataMocked';
 
 const DailyActivity = () => {
-
   const data = dailyData;
 
   return (

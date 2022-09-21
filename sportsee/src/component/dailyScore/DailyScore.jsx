@@ -1,10 +1,8 @@
 import './score.scss';
-
 import { ResponsiveContainer, RadialBarChart, RadialBar, Tooltip, Legend } from 'recharts';
 import { scoreData } from '../../mock/dataMocked';
 
 const DailyScore = () => {
-
   const data = scoreData;
 
   return (

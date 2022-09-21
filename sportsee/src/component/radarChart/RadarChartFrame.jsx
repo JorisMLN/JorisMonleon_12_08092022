@@ -1,10 +1,8 @@
 import './radar.scss';
-
 import { ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend } from 'recharts';
 import { radarData } from '../../mock/dataMocked';
 
 const RadarChartFrame = () => {
-
   const data = radarData;
 
   return (

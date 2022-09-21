@@ -1,10 +1,8 @@
 import './average.scss';
-
 import { ResponsiveContainer, LineChart, CartesianGrid, XAxis,YAxis, Tooltip, Line, Legend } from 'recharts';
 import { lineData } from '../../mock/dataMocked';
 
 const AverageSessions = () => {
-
   const data = lineData;
 
   return (
@@ -17,7 +15,6 @@ const AverageSessions = () => {
           <Tooltip />
           <Legend verticalAlign="top"/>
           <Line type="natural" dot={false} dataKey="pv" stroke="#FFFFFF" />
-
         </LineChart>
       </ResponsiveContainer>
     </div>

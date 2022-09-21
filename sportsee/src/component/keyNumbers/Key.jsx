@@ -6,9 +6,12 @@ import { FaHamburger } from 'react-icons/fa';
 
 const Key = ({keyProp, index}) => {
 
-  console.log(index)
-
-  const logo = [<VscFlame size={20} color="#FF0000"/>, <FaGuitar size={20} color="#4AB8FF"/>, <AiFillApple size={20} color="#FDCC0C"/>, <FaHamburger size={20} color="#FD5181"/>]
+  const logo = [
+    <VscFlame size={20} color="#FF0000"/>, 
+    <FaGuitar size={20} color="#4AB8FF"/>, 
+    <AiFillApple size={20} color="#FDCC0C"/>, 
+    <FaHamburger size={20} color="#FD5181"/>
+  ]
 
   return (
     <div className='key'>

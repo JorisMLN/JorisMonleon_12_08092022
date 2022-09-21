@@ -1,6 +1,5 @@
 import './layout.scss';
 import { user } from '../mock/dataMocked';
-
 import DailyActivity from '../component/daylyActivity/DailyActivity';
 import AverageSessions from '../component/averageSessions/AverageSessions';
 import RadarChartFrame from '../component/radarChart/RadarChartFrame';
