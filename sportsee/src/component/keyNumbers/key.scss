@@ -20,12 +20,35 @@
     &__logo{
       width: 60px;
       height: 60px;
-      border: 1px solid blue;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
       border-radius: 6px;
     }
+
+    .icon{
+      opacity: 1;
+      margin-left: -80px;
+    }
+
+    .rouge{
+      background-color: #FF0000;
+      opacity: 0.07;
+    }
+    .blue{
+      background-color: #4AB8FF;
+      opacity: 0.1;
+    }
+    .yellow{
+      background-color: #FDCC0C;
+      opacity: 0.1;
+    }
+    .rose{
+      background-color: #FD5181;
+      opacity: 0.1;
+    }
+
+    
 
     &__data{
       width: 100px;

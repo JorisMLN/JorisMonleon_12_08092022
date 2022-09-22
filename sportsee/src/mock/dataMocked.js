@@ -151,7 +151,7 @@ export const dailyData = [
   {
     "name": "3",
     "uv": 2000,
-    "pv": 9800
+    "pv": 1800
   },
   {
     "name": "4",
@@ -208,3 +208,10 @@ export const keyNumbers = [
     value: 54
   },
 ]
+
+export const colorKeys = [
+  'rouge', 
+  'blue', 
+  'yellow', 
+  'rose'
+];
