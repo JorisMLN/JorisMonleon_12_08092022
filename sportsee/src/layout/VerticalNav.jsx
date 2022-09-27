@@ -1,10 +1,4 @@
 import './layout.scss';
-
-import { GiMeditation } from 'react-icons/gi';
-import { BiSwim } from 'react-icons/bi';
-import { TbBike } from 'react-icons/tb';
-import { GiWeightLiftingUp } from 'react-icons/gi';
-
 import yoga from '../assets/yoga.png';
 import swim from '../assets/swim.png';
 import bike from '../assets/bike.png';

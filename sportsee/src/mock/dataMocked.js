@@ -95,44 +95,14 @@ export const lineData = [
 
 export const scoreData = [
   {
-    "name": "player",
-    "value": 10,
-    "fill": "#FF0000"
+    "name": "Group A",
+    "value": 25
   },
   {
-    "name": "25-29",
-    "value": 5,
-    "fill": "#83a6ed"
+    "name": "Group B",
+    "value": 75,
+    "fill": "#ffffff"
   },
-  // {
-  //   "name": "30-34",
-  //   "uv": 0,
-  //   "pv": 1398,
-  //   "fill": "#8dd1e1"
-  // },
-  // {
-  //   "name": "35-39",
-  //   "uv": 8.22,
-  //   "pv": 9800,
-  //   "fill": "#82ca9d"
-  // },
-  // {
-  //   "name": "40-49",
-  //   "uv": 8.63,
-  //   "pv": 3908,
-  //   "fill": "#a4de6c"
-  // },
-  // {
-  //   "name": "50+",
-  //   "uv": -2.63,
-  //   "pv": 4800,
-  //   "fill": "#d0ed57"
-  // },
-  // {
-  //   "name": "unknow",
-  //   "uv": 10,
-  //   "fill": "#ffc658"
-  // }
 ]
 
 export const dailyData = [

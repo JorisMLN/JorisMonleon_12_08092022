@@ -1,5 +1,5 @@
 import './score.scss';
-import { ResponsiveContainer, RadialBarChart, RadialBar, Tooltip, Legend } from 'recharts';
+import { ResponsiveContainer, PieChart, Pie } from 'recharts';
 import { scoreData } from '../../mock/dataMocked';
 
 const DailyScore = () => {
@@ -8,20 +8,9 @@ const DailyScore = () => {
   return (
     <div className="dailyScore">
       <ResponsiveContainer className="dailyScore__container">
-        <RadialBarChart 
-          className="dailyScore__container--radar"
-          width='100%' 
-          height='100%'
-          innerRadius="60%" 
-          outerRadius="90%" 
-          data={data} 
-          startAngle={0} 
-          endAngle={360}
-        >
-          <RadialBar className="line" barSize={10} minAngle={15} maxAngle={135} label={{ fill: '#666', position: 'insideStart'}} dataKey='value' />
-          {/* <Legend iconSize={10} width={120} height={140} layout='vertical' verticalAlign='middle' align="right" /> */}
-          <Tooltip />
-        </RadialBarChart>
+        <PieChart width={730} height={250}>
+          <Pie startAngle={90} endAngle={450} data={data} dataKey="value" nameKey="name" cx="50%" cy="50%" innerRadius={80} outerRadius={90} fill="#82ca9d" label />
+        </PieChart>
       </ResponsiveContainer>
     </div>
   )
