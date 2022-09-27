@@ -1,5 +1,6 @@
 import './layout.scss';
-import logo from '../assets/logoVector.png';
+// import logo from '../assets/logoVector.png';
+import logoGroupe from '../assets/logoGroup.png';
 import { horizontalData } from '../mock/dataMocked';
 
 const HorizontalNav = () => {
@@ -8,8 +9,8 @@ const HorizontalNav = () => {
     <div className="horizontalNav">
       <div className="logo">
         <div className="logo__circle">
-          <img className="logoBody" alt='logo sportsee' src={logo}></img>
-          <div className="logoHead"></div>
+          <img className="logoBody" alt='logo sportsee' src={logoGroupe}></img>
+          {/* <div className="logoHead"></div> */}
         </div>
         SportSee 
       </div>

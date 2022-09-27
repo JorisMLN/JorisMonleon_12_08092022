@@ -96,16 +96,14 @@ export const lineData = [
 export const scoreData = [
   {
     "name": "player",
-    "uv": 1,
-    "pv": 67,
+    "value": 10,
     "fill": "#FF0000"
   },
-  // {
-  //   "name": "25-29",
-  //   "uv": 0,
-  //   "pv": 4567,
-  //   "fill": "#83a6ed"
-  // },
+  {
+    "name": "25-29",
+    "value": 5,
+    "fill": "#83a6ed"
+  },
   // {
   //   "name": "30-34",
   //   "uv": 0,
@@ -210,8 +208,8 @@ export const keyNumbers = [
 ]
 
 export const colorKeys = [
-  'rouge', 
-  'blue', 
-  'yellow', 
+  'rouge',
+  'blue',
+  'yellow',
   'rose'
 ];

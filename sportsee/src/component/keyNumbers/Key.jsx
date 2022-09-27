@@ -1,18 +1,18 @@
 import './key.scss';
 import { colorKeys } from '../../mock/dataMocked';
-import { VscFlame } from 'react-icons/vsc';
-import { FaGuitar } from 'react-icons/fa';
-import { AiFillApple } from 'react-icons/ai';
-import { FaHamburger } from 'react-icons/fa';
+import cheeseBurger from './../../assets/cheeseburger.svg';
+import energy from './../../assets/energy.svg';
+import chicken from './../../assets/chicken.svg';
+import apple from './../../assets/apple.svg';
 
 
 const Key = ({keyProp, index}) => {
   const color = colorKeys;
   const logo = [
-    <VscFlame size={22} color="#FF0000"/>, 
-    <FaGuitar size={22} color="#4AB8FF"/>, 
-    <AiFillApple size={22} color="#FDCC0C"/>, 
-    <FaHamburger size={22} color="#FD5181"/>
+    <img src={energy}></img>, 
+    <img src={chicken}></img>, 
+    <img src={apple}></img>, 
+    <img src={cheeseBurger}></img>
   ]
 
   return (
