@@ -3,7 +3,12 @@ import './layout.scss';
 import { GiMeditation } from 'react-icons/gi';
 import { BiSwim } from 'react-icons/bi';
 import { TbBike } from 'react-icons/tb';
-import { GiWeightLiftingUp } from 'react-icons/gi' 
+import { GiWeightLiftingUp } from 'react-icons/gi';
+
+import yoga from '../assets/yoga.png';
+import swim from '../assets/swim.png';
+import bike from '../assets/bike.png';
+import heavy from '../assets/heavy.png';
 
 const VerticalNav = () => {
 
@@ -11,16 +16,16 @@ const VerticalNav = () => {
     <div className="verticalNav">
       <nav>
         <div className='navBtn'>
-          <GiMeditation  size={40} color="red"/>
+          <img src={yoga}></img>
         </div>
         <div className='navBtn'>
-          <BiSwim size={40} color="red"/>
+          <img src={swim}></img>
         </div>
         <div className='navBtn'>
-          <TbBike size={40} color="red"/>
+          <img src={bike}></img>
         </div>
         <div className='navBtn'>
-          <GiWeightLiftingUp size={40} color="red"/>
+        <img src={heavy}></img>
         </div>
       </nav>
     </div>

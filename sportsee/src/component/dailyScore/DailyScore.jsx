@@ -12,13 +12,13 @@ const DailyScore = () => {
           className="dailyScore__container--radar"
           width='100%' 
           height='100%'
-          innerRadius="80%" 
+          innerRadius="60%" 
           outerRadius="90%" 
           data={data} 
           startAngle={0} 
           endAngle={360}
         >
-          <RadialBar className="line" maxAngle={135} label={{ fill: '#666', position: 'insideStart'}} dataKey='uv' />
+          <RadialBar className="line" barSize={10} minAngle={15} maxAngle={135} label={{ fill: '#666', position: 'insideStart'}} dataKey='value' />
           {/* <Legend iconSize={10} width={120} height={140} layout='vertical' verticalAlign='middle' align="right" /> */}
           <Tooltip />
         </RadialBarChart>
