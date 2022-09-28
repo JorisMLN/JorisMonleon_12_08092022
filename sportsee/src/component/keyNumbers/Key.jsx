@@ -1,5 +1,4 @@
 import './key.scss';
-import { colorKeys } from '../../mock/dataMocked';
 import cheeseBurger from './../../assets/cheeseburger.svg';
 import energy from './../../assets/energy.svg';
 import chicken from './../../assets/chicken.svg';
@@ -7,7 +6,6 @@ import apple from './../../assets/apple.svg';
 
 
 const Key = ({keyProp, index}) => {
-  const color = colorKeys;
   const logo = [
     <img src={energy}></img>, 
     <img src={chicken}></img>, 
@@ -17,11 +15,11 @@ const Key = ({keyProp, index}) => {
 
   return (
     <div className='key'>
-      <div className={`key__logo ${color[index]}`}></div>
+      <div className={`key__logo ${keyProp.color}`}></div>
       <div className='icon'>{logo[index]}</div>
       <div className='key__data'>
+        <div className='key__data--value'>{keyProp.value}</div>
         <div>{keyProp.name}</div>
-        <div>{keyProp.value}</div>
       </div>
     </div>
   )
