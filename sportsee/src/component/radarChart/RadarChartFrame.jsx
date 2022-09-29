@@ -37,9 +37,10 @@ const RadarChartFrame = ({user}) => {
       {
         finalData.length != 0 ?
           <ResponsiveContainer className="radarChart__container">
-            <RadarChart className="radarChart__container--radar" fill="#FFFFFF" outerRadius={90} width={730} height={250} data={finalData} margin={{right: 10, left: 30}}>
+            <RadarChart className="radarChart__container--radar" fill="#FFFFFF" innerRadius={14} outerRadius={90} 
+              width={730} height={250} data={finalData} margin={{right: 10, left: 10}}>
               <PolarGrid />
-              <PolarAngleAxis className="name" tickLine={false} dataKey="kind" />
+              <PolarAngleAxis className="name" dataKey="kind" />
               <Radar name="Mike" dataKey="value" stroke="#FF0000" fill="#FF0000" fillOpacity={0.6} />
             </RadarChart>
           </ResponsiveContainer>

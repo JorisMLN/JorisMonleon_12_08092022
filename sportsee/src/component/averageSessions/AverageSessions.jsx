@@ -24,8 +24,8 @@ const AverageSessions = ({user}) => {
         <LineChart width="100%" height={250} data={averageData}>
           <XAxis axisLine={false} tickLine={false} dataKey="day" stroke="#FFFFFF"/>
           <Tooltip />
-          <Legend verticalAlign="top"/>
-          <Line type="monotone" dot={false} dataKey="sessionLength" stroke="#FFFFFF" />
+          <Legend verticalAlign="top" align='left' payload={[{value: 'Durée moyenne des sessions', color: '#FFFFFF'}]} iconSize={0}/>
+          <Line type="basis" dot={false} dataKey="sessionLength" stroke="#FFFFFF" />
         </LineChart>
       </ResponsiveContainer>
     </div>
