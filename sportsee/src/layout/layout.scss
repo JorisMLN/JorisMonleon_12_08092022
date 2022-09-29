@@ -5,7 +5,6 @@
 .frame{
   height: 100vh;
   overflow: hidden;
-  
 
   .horizontalNav{
     background-color: #020203;
@@ -52,7 +51,6 @@
     height: 91vh;
     display: flex;
     
-
     .verticalNav{
       display: flex;
       justify-content: space-around;
@@ -86,6 +84,19 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      .page404{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+
+        p{
+          font-size: 70px;
+          color:#e60000;
+        }
+      }
 
       .head{
         height: 200px;
@@ -128,6 +139,8 @@
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
+
+          // border: 1px solid red;
         }
 
         .right{
