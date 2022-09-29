@@ -2,32 +2,20 @@ import './activity.scss';
 import { ResponsiveContainer, BarChart, CartesianGrid, XAxis, YAxis, Bar, Tooltip, Legend } from 'recharts';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { getActivity } from '../../api/service';
 
 
 const DailyActivity = ({user}) => {
-  const [sessionData, setSessionData] = useState([])
+  const [sessionData, setSessionData] = useState([]);
+
+  const fetchData = async () => {
+    const data = await getActivity();
+    console.log(data);
+    setSessionData(data);
+  }
 
   useEffect(() => {
-    const getUser = async () => {
-      const requestOptions = {
-        method: 'GET',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-      };
-    
-      try {
-        const response = await fetch(`http://localhost:3000/user/${user}/activity`, requestOptions);
-        const jsonRes = await response.json();
-        setSessionData(jsonRes.data.sessions);
-    
-      } catch {
-        console.error();
-        return [];
-      }
-    }
-    getUser();
+    fetchData();
   }, [user])
 
   return (

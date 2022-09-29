@@ -16,7 +16,6 @@ const KeyBloc = ({data}) => {
       keyArray.push({name: 'Proteines', value: `${data.proteinCount}g`, color: color[1]});
       keyArray.push({name: 'Glucides', value: `${data.carbohydrateCount}g`, color: color[2]});
       keyArray.push({name: 'Lipides', value: `${data.lipidCount}g`, color: color[3]});
-      
   
       setKeyData(keyArray);
     }
@@ -24,7 +23,6 @@ const KeyBloc = ({data}) => {
     isFormatingData();
   }, [])
  
-  
 
   return (
     <div className="keyBloc">

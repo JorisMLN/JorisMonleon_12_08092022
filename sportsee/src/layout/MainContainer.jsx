@@ -6,35 +6,21 @@ import DailyScore from '../component/dailyScore/DailyScore';
 import KeyBloc from '../component/keyNumbers/KeyBloc';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { userId } from '../mock/dataMocked';
+import { getUser } from '../api/service';
 
-import { userId } from '../mock/dataMocked'; 
 
 const MainContainer = () => {
   const [userData, setUserData] = useState();
+  const fetchData = async () => {
+    const data = await getUser();
+    console.log(data);
+    setUserData(data);
+  }
 
   useEffect(() => {
-    const getUser = async () => {
-      const requestOptions = {
-        method: 'GET',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-      };
-    
-      try {
-        const response = await fetch(`http://localhost:3000/user/${userId}`, requestOptions);
-        const jsonRes = await response.json();
-        // console.log('test => ', jsonRes)
-        setUserData(jsonRes.data);
-    
-      } catch {
-        console.error();
-        return [];
-      }
-    }
-    getUser();
-  }, [userId])
+    fetchData();
+  },[userId])
 
 
   return (

@@ -1,30 +1,81 @@
-// export const getUser = async () => {
-//   const requestOptions = {
-//     method: 'GET',
-//     headers: {
-//       'Accept': 'application/json, text/plain, */*',
-//       'Content-Type': 'application/json'
-//     },
-//   };
+import { userId } from '../mock/dataMocked';
 
-//   try {
-//     const response = await fetch('http://localhost:3000/user/12', requestOptions);
-//     const jsonRes = await response.json();
-//     console.log(response.status);
+export const getUser = async () => {
+  const requestOptions = {
+    method: 'GET',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+  };
 
-//     if (response.status === 404) {
-//       console.log('not found');
-//     }
+  try {
+    const response = await fetch(`http://localhost:3000/user/${userId}`, requestOptions);
+    const jsonRes = await response.json();
+    return jsonRes.data;
 
-//     if (response.status === 200) {
-//       const user = jsonRes.find(elm => elm === 'id');
-//       console.log(user);
-//       // return user;
-//     }
+  } catch {
+    console.error();
+    return [];
+  }
+};
 
-//   } catch {
-//     console.error();
-//     return [];
-//   }
-// }
+export const getActivity = async () => {
+  const requestOptions = {
+    method: 'GET',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+  };
 
+  try {
+    const response = await fetch(`http://localhost:3000/user/${userId}/activity`, requestOptions);
+    const jsonRes = await response.json();
+    return jsonRes.data.sessions
+
+  } catch {
+    console.error();
+    return [];
+  }
+};
+
+export const getAverage = async () => {
+  const requestOptions = {
+    method: 'GET',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+  };
+
+  try {
+    const response = await fetch(`http://localhost:3000/user/${userId}/average-sessions`, requestOptions);
+    const jsonRes = await response.json();
+    return jsonRes.data.sessions;
+
+  } catch {
+    console.error();
+    return [];
+  }
+};
+
+export const getPerformance = async () => {
+  const requestOptions = {
+    method: 'GET',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+  };
+
+  try {
+    const response = await fetch(`http://localhost:3000/user/${userId}/performance`, requestOptions);
+    const jsonRes = await response.json();
+    return { value: jsonRes.data.data, kind: jsonRes.data.kind }
+
+  } catch {
+    console.error();
+    return [];
+  }
+}

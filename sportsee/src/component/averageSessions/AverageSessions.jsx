@@ -2,32 +2,20 @@ import './average.scss';
 import { ResponsiveContainer, LineChart, XAxis, Tooltip, Line, Legend } from 'recharts';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { getAverage } from '../../api/service';
 
 
 const AverageSessions = ({user}) => {
-  const [averageData, setAverageData] = useState([])
+  const [averageData, setAverageData] = useState([]);
+
+  const fetchData = async () => {
+    const data = await getAverage();
+    console.log(data);
+    setAverageData(data);
+  }
 
   useEffect(() => {
-    const getUser = async () => {
-      const requestOptions = {
-        method: 'GET',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-      };
-    
-      try {
-        const response = await fetch(`http://localhost:3000/user/${user}/average-sessions`, requestOptions);
-        const jsonRes = await response.json();
-        setAverageData(jsonRes.data.sessions);
-    
-      } catch {
-        console.error();
-        return [];
-      }
-    }
-    getUser();
+    fetchData();
   }, [user])
 
   return (

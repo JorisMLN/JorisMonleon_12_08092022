@@ -1,14 +1,12 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
 import './score.scss';
-import { ResponsiveContainer, PieChart, Pie, Label, Legend, LabelList } from 'recharts';
-// import { scoreData } from '../../mock/dataMocked';
+import { ResponsiveContainer, PieChart, Pie, Legend, LabelList } from 'recharts';
+
 
 const DailyScore = ({user, data}) => {
   const [scoreData, setScoreData] = useState([]);
   const [endAngle, setendAngle] = useState([]);
-  // console.log(user);
-  // console.log(data);
 
   useEffect(() => {
     const isFormatingData = () => {

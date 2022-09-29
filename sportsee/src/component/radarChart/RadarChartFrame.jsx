@@ -1,51 +1,36 @@
 import './radar.scss';
-import { ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend } from 'recharts';
+import { ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, Radar } from 'recharts';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { getPerformance } from '../../api/service';
+
 
 const RadarChartFrame = ({user}) => {
   const [finalData, setFinalData] = useState([]);
 
-  useEffect(() => {
-
-    const isBuildingDataModel = (valueDataObject, kind) => {
-      const finalDataSet = [];
-      valueDataObject.map((e, index) => {
-        let newDataObject = {
-          value: e.value,
-          kind: kind[index+1]
-        }
-        finalDataSet.push(newDataObject)
-      })
-
-      setFinalData(finalDataSet);
-    }
-
-    const getUser = async () => {
-      const requestOptions = {
-        method: 'GET',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-      };
-    
-      try {
-        const response = await fetch(`http://localhost:3000/user/${user}/performance`, requestOptions);
-        const jsonRes = await response.json();
-
-        isBuildingDataModel(jsonRes.data.data, jsonRes.data.kind);
-    
-      } catch {
-        console.error();
-        return [];
+  const isBuildingDataModel = (valueDataObject, kind) => {
+    const finalDataSet = [];
+    valueDataObject.map((e, index) => {
+      let newDataObject = {
+        value: e.value,
+        kind: kind[index+1]
       }
-    }
-    getUser();
+      finalDataSet.push(newDataObject)
+    })
+
+    setFinalData(finalDataSet);
+  }
+
+  const fetchData = async () => {
+    const data = await getPerformance();
+    console.log(data);
+    isBuildingDataModel(data.value, data.kind);
+  }
+
+  useEffect(() => {
+    fetchData();
   }, [user])
 
-
-  
 
   return (
     <div className="radarChart">
