@@ -116,7 +116,8 @@
 
       section{
         display: flex;
-        width: 80%;
+        min-width: 1230px;
+        max-width: 82%;
 
         .left{
           min-width: 835px;
