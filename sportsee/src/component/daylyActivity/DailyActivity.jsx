@@ -10,7 +10,10 @@ const DailyActivity = ({user}) => {
 
   const fetchData = async () => {
     const data = await getActivity();
-    console.log(data);
+    data.map((item, index) =>{
+      item.day = index+1
+      console.log(item)
+    })
     setSessionData(data);
   }
 
@@ -21,14 +24,14 @@ const DailyActivity = ({user}) => {
   return (
     <div className="dailyActivity">
       <ResponsiveContainer >
-        <BarChart width={730} height={250} data={sessionData}>
+        <BarChart width={730} height={250} data={sessionData} barGap='8'>
           <CartesianGrid strokeDasharray="0 2 0" vertical={false}/>
-          <XAxis dataKey="name" />
+          <XAxis dataKey="day" tickLine={false} />
           <YAxis orientation="right" axisLine={false} tickLine={false}/>
           <Tooltip />
           <Legend verticalAlign="top" iconType='circle'/>
-          <Bar dataKey="kilogram" fill="#282D30" barSize={5} />
-          <Bar dataKey="calories" fill="#E60000" barSize={5} />
+          <Bar dataKey="kilogram" fill="#282D30" barSize={7} />
+          <Bar dataKey="calories" fill="#E60000" barSize={7} />
         </BarChart>
       </ResponsiveContainer>
     </div>
