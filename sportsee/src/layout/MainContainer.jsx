@@ -23,7 +23,7 @@ const MainContainer = () => {
       setPage404(true);
     }
 
-    if(data != undefined){
+    if(data !== undefined){
       setPage404(false);
     }
 
