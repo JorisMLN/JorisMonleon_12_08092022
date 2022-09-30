@@ -29,7 +29,7 @@ const DailyActivity = ({user}) => {
           <XAxis dataKey="day" tickLine={false} />
           <YAxis orientation="right" axisLine={false} tickLine={false}/>
           <Tooltip />
-          <Legend verticalAlign="top" iconType='circle'/>
+          <Legend align='right' verticalAlign="top" iconType='circle' margin={{margin: 12}}/>
           <Bar dataKey="kilogram" fill="#282D30" barSize={7} />
           <Bar dataKey="calories" fill="#E60000" barSize={7} />
         </BarChart>
