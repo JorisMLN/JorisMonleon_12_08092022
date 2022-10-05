@@ -10,11 +10,10 @@ const HorizontalNav = () => {
       <div className="logo">
         <div className="logo__circle">
           <img className="logoBody" alt='logo sportsee' src={logoGroupe}></img>
-          {/* <div className="logoHead"></div> */}
         </div>
         SportSee 
       </div>
-      {horizontalData.map(item => <div className='horizontalNav__btn'>{item}</div>)}
+      {horizontalData.map((item, index) => <div className='horizontalNav__btn' key={index}>{item}</div>)}
     </div>
   )
 }

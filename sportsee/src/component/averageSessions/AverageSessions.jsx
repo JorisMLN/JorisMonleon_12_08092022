@@ -10,10 +10,22 @@ const AverageSessions = ({user}) => {
 
   const fetchData = async () => {
     const data = await getAverage();
-    console.log(data);
-    setAverageData(data);
-  }
+    const dayList = ['L', 'M', 'M', 'J', 'V', 'S', 'D'];
+    const newDataSet = [];
 
+    data.map((e, index) => {
+      let newDataObject = {
+        value: e.sessionLength,
+        day: dayList[index]
+      }
+      newDataSet.push(newDataObject)
+      return 0;
+    })
+
+    // console.log(newDataSet)
+    setAverageData(newDataSet);
+  }
+  
   useEffect(() => {
     fetchData();
   }, [user])
@@ -22,10 +34,10 @@ const AverageSessions = ({user}) => {
     <div className="averageSessions">
       <ResponsiveContainer width="100%">
         <LineChart width="100%" height={250} data={averageData}>
-          <XAxis axisLine={false} tickLine={false} dataKey="day" stroke="#FFFFFF"/>
+          <XAxis axisLine={false} tickLine={false} dataKey='day' stroke="#FFFFFF"/>
           <Tooltip />
           <Legend verticalAlign="top" align='left' payload={[{value: 'Durée moyenne des sessions', color: '#FFFFFF'}]} iconSize={0}/>
-          <Line type="basis" dot={false} dataKey="sessionLength" stroke="#FFFFFF" />
+          <Line type="basis" dot={false} dataKey="value" stroke="#FFFFFF" />
         </LineChart>
       </ResponsiveContainer>
     </div>

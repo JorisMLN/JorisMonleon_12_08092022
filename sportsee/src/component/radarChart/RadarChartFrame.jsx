@@ -16,6 +16,7 @@ const RadarChartFrame = ({user}) => {
         kind: kind[index+1]
       }
       finalDataSet.push(newDataObject)
+      return 0;
     })
 
     setFinalData(finalDataSet);
@@ -23,7 +24,7 @@ const RadarChartFrame = ({user}) => {
 
   const fetchData = async () => {
     const data = await getPerformance();
-    console.log(data);
+    // console.log(data);
     isBuildingDataModel(data.value, data.kind);
   }
 
@@ -35,12 +36,12 @@ const RadarChartFrame = ({user}) => {
   return (
     <div className="radarChart">
       {
-        finalData.length != 0 ?
+        finalData.length !== 0 ?
           <ResponsiveContainer className="radarChart__container">
-            <RadarChart className="radarChart__container--radar" fill="#FFFFFF" innerRadius={14} outerRadius={90} 
+            <RadarChart className="radarChart__container--radar" fill="#FFFFFF" innerRadius={14} outerRadius={86} 
               width={730} height={250} data={finalData} margin={{right: 10, left: 10, top: 10, bottom: 10}}>
               <PolarGrid />
-              <PolarAngleAxis fontSize={12} tickLine={false} className="name" dataKey="kind" />
+              <PolarAngleAxis fontSize={10} tickLine={false} className="name" dataKey="kind" />
               <Radar name="Mike" dataKey="value" stroke="#FF0000" fill="#FF0000" fillOpacity={0.6} />
             </RadarChart>
           </ResponsiveContainer>

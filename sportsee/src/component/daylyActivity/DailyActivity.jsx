@@ -12,8 +12,10 @@ const DailyActivity = ({user}) => {
     const data = await getActivity();
     data.map((item, index) =>{
       item.day = index+1
-      console.log(item)
+      return 0;
     })
+
+    console.log(data)
     setSessionData(data);
   }
 
@@ -28,10 +30,10 @@ const DailyActivity = ({user}) => {
           <CartesianGrid strokeDasharray="0 2 0" vertical={false}/>
           <XAxis dataKey="day" tickLine={false} />
           <YAxis orientation="right" axisLine={false} tickLine={false}/>
-          <Tooltip />
-          <Legend align='right' verticalAlign="top" iconType='circle' margin={{margin: 12}}/>
-          <Bar dataKey="kilogram" fill="#282D30" barSize={7} />
-          <Bar dataKey="calories" fill="#E60000" barSize={7} />
+          <Tooltip payload={[{value: 'Poids (kg)', color: '#282D30'}, {value: 'Calories brulées (kcal)', color: '#E60000'}]}/>
+          <Legend id='activityLegend' align='right' top='40px' verticalAlign="top" iconType='circle' width={500} payload={[{value: 'Poids (kg)', color: '#282D30'}, {value: 'Calories brulées (kcal)', color: '#E60000'}, {value: 'Score', color: '#ffffff'}]}/>
+          <Bar radius={[10, 10, 0, 0]} dataKey="kilogram" fill="#282D30" barSize={7} />
+          <Bar radius={[10, 10, 0, 0]} dataKey="calories" fill="#E60000" barSize={7} />
         </BarChart>
       </ResponsiveContainer>
     </div>
