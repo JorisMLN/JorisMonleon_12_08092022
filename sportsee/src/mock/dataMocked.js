@@ -1,4 +1,4 @@
-export const userId = 18;
+export const userId = 12;
 
 export const horizontalData = [
   'Accueil',
@@ -12,4 +12,14 @@ export const colorKeys = [
   'blue',
   'yellow',
   'rose'
+];
+
+export const averageDays = [
+  'L',
+  'M',
+  'M',
+  'J',
+  'V',
+  'S',
+  'D'
 ];
