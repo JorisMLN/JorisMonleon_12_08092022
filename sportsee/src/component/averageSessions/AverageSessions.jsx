@@ -40,8 +40,8 @@ const AverageSessions = ({user}) => {
     <div className="averageSessions">
       <ResponsiveContainer width="100%">
         <LineChart width="100%" height={250} data={averageData}>
-          <XAxis axisLine={false} tickLine={false} dataKey='day' stroke="#FFFFFF"/>
-          <Tooltip cursor={{ stroke: 'black', strokeWidth: 50 }} content={(info) => {
+          <XAxis height={35} axisLine={false} tickLine={false} dataKey='day' stroke="#FFFFFF"/>
+          <Tooltip cursor={{ stroke: 'black', strokeWidth: 40, strokeOpacity: 0.02 }} content={(info) => {
             if(!info.active){
               return null
             }
