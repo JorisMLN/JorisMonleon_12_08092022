@@ -24,7 +24,6 @@ const RadarChartFrame = ({user}) => {
 
   const fetchData = async () => {
     const data = await getPerformance();
-    // console.log(data);
     isBuildingDataModel(data.value, data.kind);
   }
 
