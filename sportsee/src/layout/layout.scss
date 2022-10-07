@@ -1,0 +1,153 @@
+@import '../styles/variables.scss';
+
+
+// -------- main frame ------- //
+.frame{
+  height: 100vh;
+  overflow: hidden;
+
+  .horizontalNav{
+    background-color: #020203;
+    height: 91px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    .logo{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 200px;
+      color: $primary;
+      font-size: 24px;
+
+      &__circle{
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+        background-color: #FF0101;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
+
+    &__btn{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 24px;
+  
+      margin: 8px;
+      color: white;
+      width: 20%;
+    }
+  }
+
+  &__main{
+    height: 91vh;
+    display: flex;
+    
+    .verticalNav{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #020203;
+      width: 117px;
+
+      nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 40%;
+
+        .navBtn{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          background-color: white;
+          border-radius: 6px;
+          width: 64px;
+          height: 64px;
+        }
+      }
+    }
+
+    .mainContainer{
+      width: 100%;
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .page404{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+
+        p{
+          font-size: 70px;
+          color:#e60000;
+        }
+      }
+
+      .head{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 100px;
+        width: 80%;
+
+        title{
+          margin-top: 70px;
+          width: 30%;
+          height: 20%;
+          display: flex;
+          align-items: center;
+
+          .hello{
+            font-size: 48px;
+            margin-right: 30px;
+          }
+
+          .name{
+            font-size: 48px;
+            color: $primary;
+          }
+        }
+      }
+
+      section{
+        display: flex;
+        min-width: 1230px;
+        max-width: 82%;
+
+        .left{
+          min-width: 835px;
+          width: 70%;
+          height: 610px;
+          margin-right: 30px;
+
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          // border: 1px solid red;
+        }
+
+        .right{
+          min-width: 258px;
+          width: 20%;
+        }
+      }
+    }
+  }
+}
