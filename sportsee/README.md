@@ -21,7 +21,7 @@ If you are working with several versions of NodeJS, we recommend you install [nv
 
 ## Install the Front
 
-### `Clone the backend repository` -> https://github.com/JorisMLN/JorisMonleon_12_08092022.git
+### `Clone the Front-end repository` -> https://github.com/JorisMLN/JorisMonleon_12_08092022.git
 
 - cd sportsee
 - npm install
