@@ -5,6 +5,7 @@ import MainContainer from './MainContainer';
 
 const Frame = () => {
 
+  // First frame display by the router //
   return (
     <div className="frame">
       <HorizontalNav />

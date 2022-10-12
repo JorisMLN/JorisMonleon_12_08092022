@@ -6,8 +6,10 @@ import { getPerformance } from '../../api/service';
 
 
 const RadarChartFrame = ({user}) => {
+  // Local storage for the new data set //
   const [finalData, setFinalData] = useState([]);
 
+  // Loop for create a new data set //
   const isBuildingDataModel = (valueDataObject, kind) => {
     const finalDataSet = [];
     valueDataObject.map((e, index) => {
@@ -22,6 +24,7 @@ const RadarChartFrame = ({user}) => {
     setFinalData(finalDataSet);
   }
 
+  // Request form the API //
   const fetchData = async () => {
     const data = await getPerformance();
     isBuildingDataModel(data.value, data.kind);

@@ -5,8 +5,8 @@ import { useEffect } from 'react';
 import { getActivity } from '../../api/service';
 
 
+// Custom component for the Recharts toolTip //
 const TooTipActivity = ({kilo, calo, kiloUnit, caloUnit}) => {
-
   return (
     <div className='tooltipActivity'>
       <div className='tooltipActivity__unit'> {kilo} {kiloUnit} </div>
@@ -16,8 +16,10 @@ const TooTipActivity = ({kilo, calo, kiloUnit, caloUnit}) => {
 }
 
 const DailyActivity = ({user}) => {
+  // Local storage for the data from the API //
   const [sessionData, setSessionData] = useState([]);
 
+  // Request from the API //
   const fetchData = async () => {
     const data = await getActivity();
     console.log(data)

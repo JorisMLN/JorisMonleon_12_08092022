@@ -1,8 +1,8 @@
 import './layout.scss';
-// import logo from '../assets/logoVector.png';
 import logoGroupe from '../assets/logoGroup.png';
 import { horizontalData } from '../mock/dataMocked';
 
+// Horizontal navigation bar component //
 const HorizontalNav = () => {
 
   return (

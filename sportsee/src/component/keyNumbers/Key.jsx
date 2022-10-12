@@ -5,6 +5,7 @@ import chicken from './../../assets/chicken.svg';
 import apple from './../../assets/apple.svg';
 
 
+// Component for each Keys Numbers //
 const Key = ({keyProp, index}) => {
   const logo = [
     <img src={energy}></img>, 

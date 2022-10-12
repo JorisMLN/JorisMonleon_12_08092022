@@ -4,6 +4,7 @@ import swim from '../assets/swim.png';
 import bike from '../assets/bike.png';
 import heavy from '../assets/heavy.png';
 
+// Vertical navigation bar component //
 const VerticalNav = () => {
 
   return (

@@ -5,10 +5,12 @@ import { colorKeys } from '../../mock/dataMocked';
 import { useEffect } from 'react';
 
 const KeyBloc = ({data}) => {
+  // Local storage for data from the API //
   const [keyData, setKeyData] = useState([]);
   const color = colorKeys;
 
   useEffect(() => {
+    // Request from the API //
     const isFormatingData = () => {
       let keyArray = [];
   

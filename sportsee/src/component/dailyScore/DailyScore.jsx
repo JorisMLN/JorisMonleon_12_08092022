@@ -5,10 +5,12 @@ import { ResponsiveContainer, PieChart, Pie, Legend } from 'recharts';
 
 
 const DailyScore = ({user, data}) => {
+  // Local state for the data from api and custom values //
   const [scoreData, setScoreData] = useState([]);
   const [endAngle, setendAngle] = useState([]);
 
   useEffect(() => {
+    // Request from the API services //
     const isFormatingData = () => {
       const finalDataSet = [
         {
@@ -18,8 +20,8 @@ const DailyScore = ({user, data}) => {
       ]
 
       const endAngleSet = 90 + (data * 100 * 3.6); //90=startAngle 3.6=degree in percentage
-      // console.log(endAngleSet)
 
+      // Set to local storage //
       setendAngle(endAngleSet)
       setScoreData(finalDataSet);
     }

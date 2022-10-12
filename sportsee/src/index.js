@@ -5,6 +5,7 @@ import './styles/index.scss';
 
 import Frame from './layout/Frame';
 
+// Router manager for the APP //
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

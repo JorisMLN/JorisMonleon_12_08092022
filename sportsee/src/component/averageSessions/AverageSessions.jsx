@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import { getAverage } from '../../api/service';
 import { averageDays } from '../../mock/dataMocked';
 
+// Custom component for the recharts tooltip --- --- --- //
 const TooTipAverage = ({value, unit}) => {
 
   return (
@@ -13,8 +14,10 @@ const TooTipAverage = ({value, unit}) => {
 }
 
 const AverageSessions = ({user}) => {
+  // Local state of data from the API //
   const [averageData, setAverageData] = useState([]);
 
+  // Request to the API //
   const fetchData = async () => {
     const data = await getAverage();
     const newDataSet = [];

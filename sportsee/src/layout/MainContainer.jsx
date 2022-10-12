@@ -10,15 +10,18 @@ import { userId } from '../mock/dataMocked';
 import { getUser } from '../api/service';
 
 
+// Graphic main container //
 const MainContainer = () => {
+  // Local storage from the API Services //
   const [userData, setUserData] = useState();
   const [page404, setPage404] = useState(false);
 
-
+  // Request from the API //
   const fetchData = async () => {
     const data = await getUser();
     console.log(data);
 
+    // undefined data manager //
     if(data === undefined){
       setPage404(true);
     }
