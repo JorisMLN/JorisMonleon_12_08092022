@@ -18,3 +18,11 @@
   border: 1px solid #e90101;
   font-size: 10px;
 }
+
+// tablet responsiv
+@media screen and (max-width: 1240px) {
+  .averageSessions{
+    width: 238px;
+    height: 233px;
+  }
+}
